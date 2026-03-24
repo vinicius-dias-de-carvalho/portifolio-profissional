@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media (min-width: 768px){
+    .hero h1 {
+        font-size: 3.5rem;
+
+    }
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .hero button {
+        font-size: 1.1rem;
+        padding: 15px 35px;
+    }
+
+    section {
+        padding: 100px 40px;
+
+    }
+
+    .beneficio p, .sobre p {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
