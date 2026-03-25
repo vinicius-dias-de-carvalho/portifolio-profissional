@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@media (min-width:768px) {
+    .hero {
+        padding: 40px;
+    }
+    .hero h1 {
+        font-size: 3.5rem;
+       
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+    }
+
+    section:not(.hero) {
+        max-width: 1100px;
+    }
+
+    .cards {
+        flex-flow: row wrap;
+        justify-content: center;
+        gap:30px;
+        
+    }
+
+    .card {
+        flex: 1 1 250px;
+      max-width: 300px;
+    }
+
+    .depoimentos {
+        padding: 80px;
+    }
+
+    .contato {
+        padding: 80px;
+    }
+}
