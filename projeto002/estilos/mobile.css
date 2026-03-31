@@ -71,12 +71,12 @@ section h2 {
     border-radius: 6px ;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
+    transition: transform 0.2s, background  0.3s;
 }
 
-.hero a:hover {
+.hero a:hover{
     background: #e2e8f0;
-    
+    transform: scale(1.05);
 }
 
 .servicos {
