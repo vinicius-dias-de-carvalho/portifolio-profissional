@@ -104,11 +104,18 @@ section h2 {
     display: inline-block;
     margin-top: 20px;
     background: #d4af37;
+    color: #0f172a;
     padding: 12px 25px;
-    border-radius: 6px;; 
+    border-radius: 6px;
    text-decoration: none;
+   font-weight: bold;
+   transition: 0.3s;
     
     
+}
+
+.contato a:hover {
+    background: #facc15;
 }
 
 footer {
@@ -132,11 +139,15 @@ footer {
             flex-flow: row wrap;
             justify-content: center;
             align-items: center;
+            align-items: stretch;
             gap: 30px;
         }
 
         .card {
-            flex: 1 1 250px;
-            max-width: 300px;
+            flex:1 1 280px;
+            max-width: 320px;
+             display: flex ;
+             flex-direction: column;
+             justify-content: center;
         }
 }
