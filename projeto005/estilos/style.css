@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0b0b0f;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hero {
+    display: flex; /*ativar o flexbox*/
+    flex-direction: row;/*Alinhar o texto e a imagem para lado a lado (padrão) */
+    justify-content: space-between; /*jogar o texto para um lado e a imagem para o outro*/
+    align-items: center; /*Alinhar os dois verticalmente ao centro*/
+    gap: 40px; /*Criar um espaço de 40px entre o texto e a imagem */
+    padding: 60px 10%; /*Dá um espaçamento interno na seção */
+}
+
+.hero-content, .hero-image{
+    flex: 1; /*faz as duas metades terem o mesmo tamanho */
+}
+
+.grid-produtos{ /*-CONTAINER PAI (onde o Grid é ativado) -*/
+   
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 0;
+} 
+
+.produto-card {
+    background-color:#1e1e24 ;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+@media screen and(max-width: 768px){
+    .hero {
+        flex-direction: column-reverse; /*Muda para coluna! Aimagem fica em cima e o texto embaixo*/
+        
+        text-align: center; /*centraliza o texto no celular para ficar mais bonito*/
+    }
+}
+
